@@ -87,7 +87,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 
 Checklist de Endpoints da API
-Com a aplicação rodando, você pode testar a API no endereço http://localhost:8080/veiculos utilizando o Thunder Client ou Postman:
+Com a aplicação rodando, você pode testar a API no endereço http://localhost:8080/veiculos utilizando o Thunder Client, Postman ou rodando a aplicação com a interface pelo seu navegador:
 
 Método	Endpoint	Descrição
 POST	/veiculos	Registra um novo veículo no estoque
