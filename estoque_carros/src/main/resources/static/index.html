@@ -1,0 +1,78 @@
+<!-- Caminho: src/main/resources/static/index.html -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Gestão de Estoque - Veículos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Gestão de Estoque de Veículos</h1>
+
+    <section class="form-section">
+        <h2 id="form-title">Cadastrar veículo</h2>
+        <form id="vehicle-form">
+            <input type="hidden" id="veiculo-id">
+            <div class="row">
+                <input id="marca" placeholder="Marca" required>
+                <input id="modelo" placeholder="Modelo" required>
+            </div>
+            <div class="row">
+                <input id="anoFabricacao" type="number" placeholder="Ano" required>
+                <input id="cor" placeholder="Cor">
+            </div>
+            <div class="row">
+                <input id="preco" type="number" step="0.01" placeholder="Preço" required>
+                <input id="quilometragem" type="number" placeholder="Quilometragem" required>
+            </div>
+            <div class="row">
+                <select id="status">
+                    <option value="DISPONIVEL">DISPONÍVEL</option>
+                    <option value="VENDIDO">VENDIDO</option>
+                </select>
+                <div class="buttons">
+                    <button type="submit">Salvar</button>
+                    <button type="button" id="cancel-btn">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="list-section">
+        <h2>Veículos</h2>
+        <div class="filters">
+            <input id="filter-marca" placeholder="Filtrar por marca">
+            <select id="filter-status">
+                <option value="">Todos</option>
+                <option value="DISPONIVEL">Disponível</option>
+                <option value="VENDIDO">Vendido</option>
+            </select>
+            <input id="filter-ano" type="number" placeholder="Filtrar por ano">
+            <button id="filter-btn">Aplicar</button>
+            <button id="clear-filter-btn">Limpar</button>
+        </div>
+
+        <table id="veiculos-table">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Ano</th>
+                <th>Cor</th>
+                <th>Preço</th>
+                <th>Km</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

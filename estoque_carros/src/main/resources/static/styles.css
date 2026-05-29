@@ -1,0 +1,18 @@
+/* Caminho: src/main/resources/static/styles.css */
+body{font-family: Arial, Helvetica, sans-serif;background:#f5f7fb;color:#222;margin:0;padding:20px}
+.container{max-width:1100px;margin:0 auto;background:#fff;padding:20px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+h1{margin-top:0}
+.row{display:flex;gap:10px;margin-bottom:10px}
+.row input, .row select{flex:1;padding:8px;border:1px solid #ddd;border-radius:4px}
+.buttons{display:flex;gap:8px}
+button{padding:8px 12px;border:none;background:#1976d2;color:#fff;border-radius:4px;cursor:pointer}
+button#cancel-btn{background:#777}
+button.delete{background:#c62828}
+.list-section{margin-top:20px}
+.filters{display:flex;gap:8px;margin-bottom:10px}
+#veiculos-table{width:100%;border-collapse:collapse}
+#veiculos-table th,#veiculos-table td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+#veiculos-table th{background:#f3f6fa}
+.edit-btn{background:#ffb300;color:#000;padding:6px 8px;border-radius:4px;border:none}
+.delete-btn{background:#e53935;color:#fff;padding:6px 8px;border-radius:4px;border:none;margin-left:6px}
+@media(max-width:700px){.row{flex-direction:column}}
