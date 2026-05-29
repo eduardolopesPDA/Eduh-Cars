@@ -21,7 +21,7 @@ Este sistema fornece um repositório centralizado que rastreia os veículos junt
 
 ---
 
-## 📂 Arquitetura do Projeto e Pacotes
+## 📂 Arquitetura do Projeto, Pacotes, Requisitos e instruções
 O projeto segue estritamente uma estrutura de pacotes em camadas altamente coesa e com baixo acoplamento:
 
 ```text
@@ -83,3 +83,14 @@ spring.datasource.password=
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 spring.h2.console.enabled=true
 spring.jpa.hibernate.ddl-auto=update
+
+
+
+Checklist de Endpoints da API
+Com a aplicação rodando, você pode testar a API no endereço http://localhost:8080/veiculos utilizando o Thunder Client ou Postman:
+
+Método	Endpoint	Descrição
+POST	/veiculos	Registra um novo veículo no estoque
+GET	/veiculos	Lista todos os veículos ou aceita parâmetros de busca (?marca=...&precoMax=...)
+PUT	/veiculos/{id}	Atualiza preço, quilometragem ou status de disponibilidade
+DELETE	/veiculos/{id}	Remove permanentemente um veículo do banco de dados pelo seu ID único
